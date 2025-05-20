@@ -176,7 +176,7 @@ def run_str_script():
 
     with smtplib.SMTP('smtp.office365.com', 587) as smtp:
         smtp.starttls()
-        smtp.login(sender, 'bbhbrtbzqghvhzll')  # Replace securely
+        smtp.login(sender, '')  # Replace securely, app password has been hided.
         smtp.send_message(msg)
 
     print("STR Report generated and email sent.")
